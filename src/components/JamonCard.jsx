@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function JamonCard({name}) {
+export default function JamonCard({blockHash, transactionHash}) {
   return (
-    <h1>{name}</h1>
+    <div>
+      <h1>{blockHash}</h1>
+      <h1>{transactionHash}</h1>
+    </div>
   )
 }

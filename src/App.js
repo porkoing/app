@@ -20,7 +20,8 @@ class App extends Component {
     this.state = {
       newPork: null,
       web3: null,
-      Porkoing: null
+      Porkoing: null,
+      porks: []
     }
   }
 
@@ -93,6 +94,10 @@ class App extends Component {
         .then((result) => {
           console.log('Created', result)
           // TODO paint
+          alert("Created Pork with Id: " + this.state.newPork.porkId);
+          this.setState({
+            porks: [...this.state.porks, result]
+          })
         })
     })
   }
@@ -110,7 +115,7 @@ class App extends Component {
               <h1>Jamon forever!</h1>
               <h2>Search</h2>
               <JamonFinder handleSearch={this.handleSearch.bind(this)} />
-              <JamonCard name="Pata Negra" />
+              <JamonCard porks={this.state.porks} />
               <hr />
               <CreatePork handleCreate={this.handleCreate.bind(this)} />
             </div>
