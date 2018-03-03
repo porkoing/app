@@ -1,3 +1,2 @@
-PorkOing - A Pork and Ham prestidge platform based on Ehtereum
-==============================================================
-
+PorkOing - An Ehtereum based pork and ham prestige platform 
+===========================================================
