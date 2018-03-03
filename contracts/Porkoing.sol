@@ -35,7 +35,6 @@ contract Porkoing {
 
     function Porkoing() public {
         owner = msg.sender;
-        // TODO initializa fields
         farmers[1] = Farmer( {id: 1, name: "Pablo"} );
         farmers[2] = Farmer( {id: 2, name: "Jose"} );
         vets[1] = Vet( {id: 3, name: "Lucia"} );
