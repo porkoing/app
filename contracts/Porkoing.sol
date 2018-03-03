@@ -1,4 +1,5 @@
 pragma solidity ^0.4.18;
+pragma experimental ABIEncoderV2;
 
 contract Porkoing {
     address owner;
@@ -71,4 +72,5 @@ contract Porkoing {
     function findPork(uint porkId) public view returns (Pork) {
         return porks[porkId];
     }
+    
 }
